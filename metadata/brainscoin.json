@@ -1,0 +1,7 @@
+{
+  "name": "BrainCoin",
+  "description": "Use brain and gain",
+  "symbol": "BRAIN",
+  "decimals": 9,
+  "image": "https://brainscoin.github.io/brainscoin-jetton/metadata/brainscoin.png"
+}
