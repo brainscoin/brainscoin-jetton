@@ -1,7 +1,6 @@
 {
-  "name": "BrainCoin",
+  "name": "BrainsCoin",
   "description": "Use brain and gain",
-  "symbol": "BRAIN",
-  "decimals": 9,
+  "symbol": "BRAINS",
   "image": "https://brainscoin.github.io/brainscoin-jetton/metadata/brainscoin.png"
 }
