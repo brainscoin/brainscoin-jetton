@@ -2,6 +2,12 @@
 
 [BrainsCoin](https://brainsco.in)
 
+```sh
+export TONCENTER_API_KEY="xxxxx"
+```
+
+https://brainscoin.github.io/brainscoin-jetton/metadata/brainscoin.json
+
 Jetton-with-governance FunC smart contracts.
 
 # Targets and goals
