@@ -1,6 +1,8 @@
 # Jetton with Governance
 
-Jetton-with-governance FunC smart contracts. 
+[BrainsCoin](https://brainsco.in)
+
+Jetton-with-governance FunC smart contracts.
 
 # Targets and goals
 
@@ -16,9 +18,9 @@ Thus this jetton represents a [standard TON jetton smart contracts](https://gith
 
 - Admin of jetton can change jetton-minter code and it's full data.
 
-__⚠️ It is critically important for issuer to carefully manage the admin's account private key to avoid any potential risks of being hacked. It is highly recommend to use multi-signature wallet as admin account with private keys stored on different air-gapped hosts / hardware wallets.__
+**⚠️ It is critically important for issuer to carefully manage the admin's account private key to avoid any potential risks of being hacked. It is highly recommend to use multi-signature wallet as admin account with private keys stored on different air-gapped hosts / hardware wallets.**
 
-__⚠️ The contract does not check the code and data on `upgrade` message, so it is possible to brick the contract if you send invalid data or code. Therefore you should always check the upgrade in the testnet.__
+**⚠️ The contract does not check the code and data on `upgrade` message, so it is possible to brick the contract if you send invalid data or code. Therefore you should always check the upgrade in the testnet.**
 
 # Local Development
 
@@ -48,10 +50,10 @@ API_KEY can be obtained on https://toncenter.com or https://testnet.toncenter.co
 
 - The jetton-wallet contract does not include functionality that allows the owner to withdraw Toncoin funds from jetton-wallet Toncoin balance.
 
-- The contract prices gas based on the *current* blockchain configuration. 
-   It is worth keeping in mind the situation when the configuration has changed at the moment when the message goes from one jetton-wallet to another.
-   Reducing fees in a blockchain configuration does not require additional actions.
-   However, increasing fees in a blockchain configuration requires preliminary preparation - e.g. wallets and services must start sending Toncoins for gas in advance based on future parameters.
+- The contract prices gas based on the _current_ blockchain configuration.
+  It is worth keeping in mind the situation when the configuration has changed at the moment when the message goes from one jetton-wallet to another.
+  Reducing fees in a blockchain configuration does not require additional actions.
+  However, increasing fees in a blockchain configuration requires preliminary preparation - e.g. wallets and services must start sending Toncoins for gas in advance based on future parameters.
 
 - If you set the status of Jetton Wallet to prohibit receiving jettons - there is no guarantee that when you send jettons to such a jetton-wallet, jettons will bounce back and be credited to the sender. In case of gas shortage they can be lost.
-   Toncoin for gas and forward will also not be returned to the sender but will remain on the sender’s jetton-wallet.
+  Toncoin for gas and forward will also not be returned to the sender but will remain on the sender’s jetton-wallet.
